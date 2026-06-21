@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { User, Terminal, Cpu, Award, Milestone } from "lucide-react";
 
 export default function About() {
-  const premiumEase = [0.16, 1, 0.3, 1];
+const premiumEase = [0.16, 1, 0.3, 1] as const;
 
   const coreMetrics = [
     { icon: Cpu, label: "Core Focus", value: "Enterprise Architecture" },
