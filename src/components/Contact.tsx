@@ -66,7 +66,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="font-mono text-[9px] tracking-wider text-slate-500 uppercase">Secure Email</div>
-                  <div className="text-xs md:text-sm font-medium text-slate-200">yakubuidris344@gmail.com</div>
+                  <div className="text-xs md:text-sm font-medium text-slate-200">idrisyakubu816@gmail.com</div>
                 </div>
               </a>
 
@@ -79,7 +79,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <div className="font-mono text-[9px] tracking-wider text-slate-500 uppercase">Voice Direct</div>
-                  <div className="text-xs md:text-sm font-medium text-slate-200">+234 814 036 7355</div>
+                  <div className="text-xs md:text-sm font-medium text-slate-200">+234 8137215231</div>
                 </div>
               </a>
 
