@@ -6,7 +6,8 @@ import Image from "next/image";
 import { ArrowUpRight, Code2, Terminal, ShieldCheck } from "lucide-react";
 
 export default function Hero() {
-  const premiumEase = [0.16, 1, 0.3, 1];
+  // FIXED: Cast the easing coordinates array to a strict constant tuple signature
+  const premiumEase = [0.16, 1, 0.3, 1] as const;
   const sectionRef = useRef<HTMLDivElement>(null);
 
   // ==========================================

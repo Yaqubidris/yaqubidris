@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Cpu, Server, Database, Code2, ShieldAlert, Terminal } from "lucide-react";
+import { Cpu, Server, Database, Code2, ShieldAlert } from "lucide-react";
 
 export default function Capabilities() {
-  const premiumEase = [0.16, 1, 0.3, 1];
+  // FIXED: Lock the array into a strict constant tuple signature
+  const premiumEase = [0.16, 1, 0.3, 1] as const;
 
   const systemStacks = [
     {

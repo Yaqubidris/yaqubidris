@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, ArrowUpRight, ShieldCheck, Layers, Box, BookOpen, CreditCard, Warehouse } from "lucide-react";
+import { Briefcase, ArrowUpRight, Layers, Box, BookOpen, CreditCard, Warehouse } from "lucide-react";
 
 export default function Projects() {
-  const premiumEase = [0.16, 1, 0.3, 1];
+  // FIXED: Explicitly casting the easing array as a strict constant tuple
+  const premiumEase = [0.16, 1, 0.3, 1] as const;
 
   const projectFeed = [
     {
@@ -75,8 +76,6 @@ export default function Projects() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
           {projectFeed.map((project, idx) => {
             const Icon = project.icon;
-            
-            // Grid pacing: First project spans full width (12 columns), rest sit perfectly side-by-side (6 columns)
             const isWide = idx === 0;
 
             return (
